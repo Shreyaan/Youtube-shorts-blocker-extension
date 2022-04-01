@@ -1,7 +1,14 @@
 
-  setTimeout(() => {  var element = document.querySelectorAll('#endpoint');
-  var nonExistentFirstElement = element[2]; // this is undefined, there's nothing at the first position
-  if(nonExistentFirstElement) nonExistentFirstElement.remove(); // thus, this is an error since you're calling `undefined.remove()`
-  
-  console.log(JSON.stringify(element) + 'ytnf')
-  console.log(nonExistentFirstElement + '2ytnf') }, 1000);
+let element = undefined
+let nonExistentFirstElement = undefined
+let count = 0
+
+while (nonExistentFirstElement == undefined || count >=30) {
+  setTimeout(() => {
+    element = document.querySelectorAll('#endpoint');
+    nonExistentFirstElement = element[2];
+    if (nonExistentFirstElement) nonExistentFirstElement.remove();
+
+  }, 100);
+  count +=count
+}
