@@ -8,6 +8,7 @@ while (nonExistentFirstElement == undefined || count >=30) {
     element = document.querySelectorAll('#endpoint');
     nonExistentFirstElement = element[2];
     if (nonExistentFirstElement) nonExistentFirstElement.remove();
+    console.log(count + " sgwks ")
 
   }, 100);
   count +=count
