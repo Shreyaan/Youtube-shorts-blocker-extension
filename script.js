@@ -1,4 +1,4 @@
-let delay = 1000 //1000 = 1 sec
+let delay = 1000; //1000 = 1 sec
 
 //removes shorts from side panel
 setTimeout(() => {
@@ -29,7 +29,6 @@ function removeShorts() {
 setTimeout(() => {
   removeShorts();
 }, delay);
-
 
 var time = 1;
 var interval = setInterval(function () {
