@@ -1,3 +1,4 @@
+//removes shorts from side panel
 setTimeout(() => {
   let element = document.querySelectorAll("#endpoint");
   let nonExistentFirstElement = element[2];
