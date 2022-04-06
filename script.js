@@ -22,7 +22,7 @@ function removeShorts() {
   let shortsPlayerParent;
   if (shortsPlayer) shortsPlayerParent = shortsPlayer.parentElement;
   if (shortsPlayerParent != undefined || null) {
-    shortsPlayerParent.parentElement.parentElement.remove();
+    shortsPlayerParent.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
   }
 }
 
