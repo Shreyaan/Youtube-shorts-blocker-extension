@@ -1,9 +1,11 @@
+let delay = 1000 //1000 = 1 sec
+
 //removes shorts from side panel
 setTimeout(() => {
   let element = document.querySelectorAll("#endpoint");
   let nonExistentFirstElement = element[2];
   if (nonExistentFirstElement) nonExistentFirstElement.remove();
-}, 1000);
+}, delay);
 
 function removeShorts() {
   let output = [];
@@ -26,7 +28,7 @@ function removeShorts() {
 
 setTimeout(() => {
   removeShorts();
-}, 1000);
+}, delay);
 
 
 var time = 1;
@@ -38,4 +40,4 @@ var interval = setInterval(function () {
   } else {
     clearInterval(interval);
   }
-}, 1000);
+}, delay);
