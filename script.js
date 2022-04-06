@@ -13,8 +13,11 @@ function removeShorts() {
   for (let i of document.querySelectorAll("*")) {
     if (regex.test(i.href)) {
       output.push(i);
-      var bruh = i.parentElement;
-      bruh.parentElement.remove();
+      let bruh = i.parentElement;
+      if (bruh){
+
+        bruh.parentElement.remove();
+      }
     }
   }
 
@@ -26,17 +29,6 @@ function removeShorts() {
   }
 }
 
-setTimeout(() => {
+let interval = setInterval(function () {
   removeShorts();
-}, delay);
-
-var time = 1;
-var interval = setInterval(function () {
-  if (time <= 100) {
-    removeShorts();
-
-    time++;
-  } else {
-    clearInterval(interval);
-  }
 }, delay);
